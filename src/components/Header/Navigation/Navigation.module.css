@@ -1,0 +1,13 @@
+ul {
+  color: white;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
