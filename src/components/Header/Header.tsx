@@ -6,16 +6,21 @@ import Navigation from "./Navigation/Navigation";
 const Header = () => {
   return (
     <header>
-      <Navigation />
+      <div className={styles.navContainer}>
+        <Navigation />
+        <div className={styles.navLine}></div>
+      </div>
       <div className={styles.titleContainer}>
-        <p>NEW PRODUCT</p>
-        <h1>XX99 MARK II HEADPHONES</h1>
-        <p>
-          Experiance natural,lifelike audio and exceptional build quality made
-          for the passionate music enthusiast.
-        </p>
-        <div>
-          <button>SEE PRODUCT</button>
+        <div className={styles.heroContent}>
+          <p className={styles.overline}>NEW PRODUCT</p>
+          <h1>XX99 MARK II HEADPHONES</h1>
+          <p className={styles.description}>
+            Experiance natural,lifelike audio and exceptional build quality made
+            for the passionate music enthusiast.
+          </p>
+          <div>
+            <button>SEE PRODUCT</button>
+          </div>
         </div>
       </div>
     </header>

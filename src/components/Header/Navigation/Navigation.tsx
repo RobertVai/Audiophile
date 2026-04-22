@@ -5,9 +5,9 @@ import cartIcon from "../../../assets/shared/desktop/icon-cart.svg";
 
 const Navigation = () => {
   return (
-    <div className={styles.navContainer}>
+    <div className={styles.navBar}>
       <img src={mainLogo} alt="Audiophile" />
-      <div>
+      <div className={styles.navList}>
         <nav>
           <ul>
             <li>HOME</li>
@@ -18,7 +18,7 @@ const Navigation = () => {
         </nav>
       </div>
 
-      <div>
+      <div className={styles.cart}>
         <img src={cartIcon} alt="" />
       </div>
     </div>
