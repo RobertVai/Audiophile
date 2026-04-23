@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./Navigation.module.css";
-import mainLogo from "../../../assets/shared/desktop/logo.svg";
-import cartIcon from "../../../assets/shared/desktop/icon-cart.svg";
+import mainLogo from "../../assets/shared/desktop/logo.svg";
+import cartIcon from "../../assets/shared/desktop/icon-cart.svg";
 
 const Navigation = () => {
   return (
     <div className={styles.navBar}>
-      <img src={mainLogo} alt="Audiophile" />
+      <div className={styles.logoContainer}>
+        <img src={mainLogo} alt="Audiophile" />
+      </div>
+
       <div className={styles.navList}>
         <nav>
           <ul>
