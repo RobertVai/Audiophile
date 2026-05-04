@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Categories.module.css";
-import headphonesThumbnail from "../../assets/shared/desktop/image-category-thumbnail-headphones.png";
-import speakersThumbnail from "../../assets/shared/desktop/image-category-thumbnail-speakers.png";
-import earphonesThumbnail from "../../assets/shared/desktop/image-category-thumbnail-earphones.png";
+import headphonesThumbnail from "../../../public/assets/shared/desktop/image-category-thumbnail-headphones.png";
+import speakersThumbnail from "../../../public/assets/shared/desktop/image-category-thumbnail-speakers.png";
+import earphonesThumbnail from "../../../public/assets/shared/desktop/image-category-thumbnail-earphones.png";
 const Categories = () => {
   return (
     <div className={styles.mainWrapper}>

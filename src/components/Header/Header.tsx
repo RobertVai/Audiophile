@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Header.module.css";
-import homeBackground from "../../assets/home/desktop/image-hero.jpg";
+import homeBackground from "../../../public/assets/home/desktop/image-hero.jpg";
 import Navigation from "../Navigation/Navigation";
 
 const Header = () => {

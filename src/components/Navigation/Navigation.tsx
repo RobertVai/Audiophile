@@ -1,7 +1,7 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Navigation.module.css";
-import mainLogo from "../../assets/shared/desktop/logo.svg";
-import cartIcon from "../../assets/shared/desktop/icon-cart.svg";
+import mainLogo from "../../../public/assets/shared/desktop/logo.svg";
+import cartIcon from "../../../public/assets/shared/desktop/icon-cart.svg";
 
 const Navigation = () => {
   return (
@@ -13,8 +13,14 @@ const Navigation = () => {
       <div className={styles.navList}>
         <nav>
           <ul>
-            <li>HOME</li>
-            <li>HEADPHONES</li>
+            <li>
+              <Link to="/">HOME</Link>
+            </li>
+
+            <li>
+              <Link to="/headphones">HEADPHONES</Link>
+            </li>
+
             <li>SPEAKERS</li>
             <li>EARPHONES</li>
           </ul>

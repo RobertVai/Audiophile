@@ -10,7 +10,10 @@ ul {
 ul li {
   cursor: pointer;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 .navBar {
   display: grid;
   grid-template-columns: 1fr auto 1fr;

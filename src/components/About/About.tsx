@@ -1,5 +1,6 @@
 import styles from "./About.module.css";
-import image from "../../assets/shared/desktop/image-best-gear.jpg";
+import image from "../../../public/assets/shared/desktop/image-best-gear.jpg";
+
 
 const About = () => {
   return (

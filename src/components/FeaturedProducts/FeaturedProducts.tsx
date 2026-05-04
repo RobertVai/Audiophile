@@ -1,8 +1,8 @@
 import styles from "./FeaturedProducts.module.css";
 
-import zx9Speaker from "../../assets/home/desktop/image-speaker-zx9.png";
-import zx7Speaker from "../../assets/home/desktop/image-speaker-zx7.jpg";
-import yx1Earphones from "../../assets/home/desktop/image-earphones-yx1.jpg";
+import zx9Speaker from "../../../public/assets/home/desktop/image-speaker-zx9.png";
+import zx7Speaker from "../../../public/assets/home/desktop/image-speaker-zx7.jpg";
+import yx1Earphones from "../../../public/assets/home/desktop/image-earphones-yx1.jpg";
 
 const FeaturedProducts = () => {
   return (
