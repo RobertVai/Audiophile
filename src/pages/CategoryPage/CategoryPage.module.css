@@ -1,0 +1,67 @@
+.pageWrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+  margin-bottom: 10rem;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.imageContainer {
+  width: 50%;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+}
+
+.imageContainer img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.contentContainer {
+  width: 50%;
+  max-width: 445px;
+}
+
+.contentContainer h2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.contentContainer p {
+  color: #979797;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  margin-bottom: 2.5rem;
+}
+
+.button {
+  width: 160px;
+  height: 48px;
+  background-color: #d87d4a;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: #fbaf85;
+}

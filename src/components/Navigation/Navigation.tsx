@@ -18,11 +18,15 @@ const Navigation = () => {
             </li>
 
             <li>
-              <Link to="/headphones">HEADPHONES</Link>
+              <Link to="/category/headphones">HEADPHONES</Link>
             </li>
 
-            <li>SPEAKERS</li>
-            <li>EARPHONES</li>
+            <li>
+              <Link to="/category/speakers">SPEAKERS</Link>
+            </li>
+            <li>
+              <Link to="/category/earphones">EARPHONES</Link>
+            </li>
           </ul>
         </nav>
       </div>
