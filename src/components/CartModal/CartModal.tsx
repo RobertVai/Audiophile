@@ -1,4 +1,5 @@
 import { useCart } from "../../contexts/CartContext";
+import { Link } from "react-router-dom";
 import styles from "./CartModal.module.css";
 
 type CartModalProps = {
@@ -53,7 +54,9 @@ const CartModal = ({ onClose }: CartModalProps) => {
               <strong>$ {total.toLocaleString()}</strong>
             </div>
 
-            <button className={styles.checkoutButton}>CHECKOUT</button>
+            <button className={styles.checkoutButton}>
+              <Link to="checkout">CHECKOUT</Link>
+            </button>
           </>
         )}
       </div>
