@@ -1,7 +1,8 @@
-import React from "react";
+import { useState } from "react";
 import styles from "./Header.module.css";
 import homeBackground from "../../../public/assets/home/desktop/image-hero.jpg";
 import Navigation from "../Navigation/Navigation";
+import CartModal from "../CartModal/CartModal";
 
 const Header = () => {
   return (

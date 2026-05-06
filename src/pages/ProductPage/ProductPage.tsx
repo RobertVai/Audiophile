@@ -1,9 +1,13 @@
 import { Link, useParams } from "react-router-dom";
+import { useState } from "react";
+import { useCart } from "../../contexts/CartContext";
 import { products } from "../../data/products";
 import styles from "./ProductPage.module.css";
 
 const ProductPage = () => {
+  const [quantity, setQuantity] = useState(1);
   const { slug } = useParams();
+  const { addToCart } = useCart();
 
   const product = products.find((product) => product.slug === slug);
 
@@ -27,12 +31,23 @@ const ProductPage = () => {
 
           <div className={styles.actions}>
             <div className={styles.quantity}>
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
+              <button
+                onClick={() => setQuantity((prev) => Math.max(1, prev - 1))}
+              >
+                -
+              </button>
+
+              <span>{quantity}</span>
+
+              <button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
             </div>
 
-            <button className={styles.button}>ADD TO CART</button>
+            <button
+              className={styles.button}
+              onClick={() => addToCart(product, quantity)}
+            >
+              ADD TO CART
+            </button>
           </div>
         </div>
       </section>

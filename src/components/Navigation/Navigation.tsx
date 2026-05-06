@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import CartModal from "../CartModal/CartModal";
 import styles from "./Navigation.module.css";
 import mainLogo from "../../../public/assets/shared/desktop/logo.svg";
 import cartIcon from "../../../public/assets/shared/desktop/icon-cart.svg";
 
 const Navigation = () => {
+  const [cartModalOpen, setCartModelOpen] = useState(false);
   return (
     <div className={styles.navBar}>
       <div className={styles.logoContainer}>
@@ -31,9 +34,10 @@ const Navigation = () => {
         </nav>
       </div>
 
-      <div className={styles.cart}>
+      <div className={styles.cart} onClick={() => setCartModelOpen(true)}>
         <img src={cartIcon} alt="" />
       </div>
+      {cartModalOpen && <CartModal onClose={() => setCartModelOpen(false)} />}
     </div>
   );
 };
