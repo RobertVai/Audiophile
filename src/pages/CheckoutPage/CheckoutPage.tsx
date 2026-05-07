@@ -1,8 +1,10 @@
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useState } from "react";
 import { useCart } from "../../contexts/CartContext";
 import styles from "./CheckoutPage.module.css";
+import OrderConfirmationModal from "../../components/OrderConfirmationModal/OrderConfirmationModal";
 
 const checkoutSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -22,6 +24,7 @@ const checkoutSchema = z.object({
 type CheckoutFormData = z.infer<typeof checkoutSchema>;
 
 const CheckoutPage = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const { cartItems } = useCart();
 
   const {
@@ -49,6 +52,7 @@ const CheckoutPage = () => {
 
   const onSubmit = (data: CheckoutFormData) => {
     console.log(data);
+    setIsModalOpen(true);
   };
 
   return (
@@ -203,6 +207,9 @@ const CheckoutPage = () => {
           </div>
         </aside>
       </div>
+      {isModalOpen && (
+        <OrderConfirmationModal onClose={() => setIsModalOpen(false)} />
+      )}
     </main>
   );
 };
